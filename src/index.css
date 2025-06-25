@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -42,6 +44,11 @@
 }
 
 :root {
+  font-family: "Helvetica Neue", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -51,7 +58,7 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: 30 50% 94%;
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -118,3 +125,4 @@
     @apply bg-background text-foreground;
   }
 }
+

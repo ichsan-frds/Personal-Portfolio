@@ -1,39 +1,42 @@
 'use client';
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { useEffect, useState } from "react";
-import { CiLight } from "react-icons/ci";
-import { MdDarkMode } from "react-icons/md";
+// import { useEffect, useState } from "react";
+// import { CiLight } from "react-icons/ci";
+// import { MdDarkMode } from "react-icons/md";
+// import { RxHamburgerMenu } from "react-icons/rx";
+// import Sidebar from "./Sidebar";
 
 export default function Header() {
-    const [mode, setMode] = useState('');
+    // const [mode, setMode] = useState('');
+    // const [isSidebarOpen, setSidebarOpen] = useState(false)
 
-  useEffect(() => {
-    const storedTheme = localStorage.getItem('theme') as 'dark' | 'light' | null;
-    if (storedTheme) {
-      setMode(storedTheme);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedTheme = localStorage.getItem('theme') as 'dark' | 'light' | null;
+  //   if (storedTheme) {
+  //     setMode(storedTheme);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    if (mode) {
-      document.documentElement.classList.toggle('dark', mode === 'dark');
-      localStorage.setItem('theme', mode);
-    }
-  }, [mode]);
+  // useEffect(() => {
+  //   if (mode) {
+  //     document.documentElement.classList.toggle('dark', mode === 'dark');
+  //   }
+  // }, [mode]);
 
     return (
-        <header className="flex p-4 justify justify-between">
+      <header>
+        <div className="flex p-4 justify justify-between">
             <Avatar className="h-12 w-12">
                 <AvatarImage src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/Avatar_Ichsan_50px.png" />
                 <AvatarFallback>IF</AvatarFallback>
             </Avatar>
-            <div className="flex gap-4 items-center">
-                <a>Experience</a>
-                <a>Projects</a>
-                <a>Certifications</a>
-                <a>Contact</a>
-                <button
+            <div className="hidden sm:flex gap-8 items-center tracking-wide">
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#connect">Connect</a>
+                {/* <button
                 onClick={() => {
                     const newMode = mode === 'dark' ? 'light' : 'dark';
                     setMode(newMode);
@@ -45,8 +48,13 @@ export default function Header() {
                     ) : (
                         <MdDarkMode size={24} />
                     )}
-                </button>
+                </button> */}
             </div>
-        </header>
+            {/* <button onClick={() => setSidebarOpen(!isSidebarOpen)} className="flex sm:hidden items-center">
+                <RxHamburgerMenu size={24}/>
+            </button> */}
+          </div>
+          {/* <Sidebar isOpen={isSidebarOpen}/> */}
+      </header>
     );
 }
