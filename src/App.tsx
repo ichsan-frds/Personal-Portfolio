@@ -5,6 +5,7 @@ import WorkExperience from './components/WorkExperience';
 import OrganizationalExperience from './components/OrganizationalExperience';
 import DataProjects from './components/DataProjects';
 import SoftdevProjects from './components/SoftDevProjects.tsx';
+import Certifications from './components/Certifications.tsx';
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdDataThresholding } from "react-icons/md";
 import { PiHandshake } from "react-icons/pi";
@@ -51,10 +52,10 @@ function App() {
 }, []);
   
   return (
-    <div className="max-w-[900px] mx-auto scroll-smooth">
+    <div className="max-w-[900px] mx-auto">
       <Header />
       <main>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-12 px-8 py-16'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-12 px-8 pt-16'>
               <div className='col-span-1 space-y-4'>
                   <p className='text-slate-600 font-medium'>Welcome Strangers!</p>
                   <h1 className='text-4xl font-medium'>I'm Ichsan, a Data Enthusiast from Indonesia</h1>
@@ -88,13 +89,19 @@ function App() {
                     <a href="#connect" className='flex justify-center gap-x-2 col-span-1 border border-slate-400 hover:bg-black hover:text-white transition-colors duration-500 rounded-full p-3 font-semibold cursor-pointer'>Get In Touch<PiHandshake size={24}/></a>
                   </div>
               </div>
-              {/* <div className='flex flex-col sm:grid sm:grid-cols-3 md:flex md:flex-col gap-4 sm:gap-8'>
-                  <img className="relative overflow-hidden rounded-2xl shadow-lg bg-slate-200 w-full md:w-[324px] md:h-[231px]" src="https://raw.githubusercontent.com/ichsan-frds/Bank-Customer-Deposit-Classification/refs/heads/main/BankCustomerDepositClassificationImage.jpg" alt="" />
+              <div className='flex flex-col sm:grid sm:grid-cols-3 md:flex md:flex-col gap-4 sm:gap-8 pt-14'>
+                  <img 
+                  className="relative overflow-hidden rounded-2xl shadow-lg bg-slate-200 w-full object-cover sm:max-md:w-[176px] sm:max-md:h-[264px] md:w-[324px] md:h-[231px] hover:scale-110 transition-transform duration-300" 
+                  src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/LandscapeIchsan.png" alt="Ichsan 1" />
                   <div className='grid grid-cols-2 sm:contents md:flex gap-4 sm:gap-8 md:ml-8'>
-                    <img className="min-h-full min-w-full object-cover rounded-2xl" src="https://raw.githubusercontent.com/ichsan-frds/Bank-Customer-Deposit-Classification/refs/heads/main/BankCustomerDepositClassificationImage.jpg" alt="" />
-                    <img className="min-h-full min-w-full object-cover rounded-2xl" src="https://raw.githubusercontent.com/ichsan-frds/Bank-Customer-Deposit-Classification/refs/heads/main/BankCustomerDepositClassificationImage.jpg" alt="" />
+                    <div className='relative overflow-hidden rounded-2xl shadow-lg bg-slate-200 sm:max-md:w-[176px] sm:max-md:h-[264px] md:w-[176px] md:h-[264px] hover:scale-110 transition-transform duration-300'>
+                        <img className="min-h-full min-w-full object-cover" src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/PotraitIchsan1.png" alt="Ichsan 2" />
+                    </div>
+                    <div className='relative overflow-hidden rounded-2xl shadow-lg bg-slate-200 sm:max-md:w-[176px] sm:max-md:h-[264px] md:w-[176px] md:h-[264px] hover:scale-110 transition-transform duration-300'>
+                        <img className="min-h-full min-w-full object-cover" src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/PotraitIchsan2.png" alt="Ichsan 3" />
+                    </div>
                   </div>
-              </div> */}
+              </div>
           </div>
           <div className='flex-col items-center justify-center px-8 py-32 text-3xl sm:text-4xl md:text-5xl lg:text-6xl'>
             <h2 className='text-color-change text-slate-300'>I love finding hidden patterns.</h2>
@@ -157,7 +164,7 @@ function App() {
                         : 'bg-white text-black'
                     }`}
                   >
-                    Software Development
+                    Software Dev
                   </button>
               </div>
               {activeProject === 'data' && <DataProjects />}
@@ -169,60 +176,7 @@ function App() {
                   <h2>"I am always ready to <span className='text-red-300'>learn</span> although I do not always like being taught."</h2>
                   <h2 className='justify-self-end'>- Winston Churchill</h2>
               </div>
-              <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
-                  <div 
-                  className='rounded-lg border bg-card text-card-foreground h-full flex flex-col items-center gap-y-4 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 group'>
-                      <img src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/Advanced_Computer_Vision" alt="" />
-                      <div className='text-center px-2'>
-                          <h1 className='font-medium text-base sm:text-lg leading-7 tracking-wide'>Advanced Computer Vision with TensorFlow</h1>
-                          <h2 className='text-slate-600 text-sm sm:text-base leading-7 tracking-wide'>DeepLearning.ai</h2>
-                      </div>
-                      <div className='flex w-full px-2'>
-                          <time dateTime="2024-11-09" className='gap-x-2 text-sm sm:text-base text-slate-400'>Dec 16, 2024</time>
-                          <p className='gap-x-2 text-sm text-slate-400 ml-auto'>Forever</p>
-                      </div>
-                      <p className='text-red-300 pb-4 cursor-pointer hover:underline'>View Credential</p>
-                  </div>
-                  <div 
-                  className='rounded-lg border bg-card text-card-foreground h-full flex flex-col items-center gap-y-4 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 group'>
-                      <img src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/Browser_Based_Models" alt="" />
-                      <div className='text-center px-2'>
-                          <h1 className='font-medium text-base sm:text-lg leading-7 tracking-wide'>Browser-based Models with TensorFlow.js</h1>
-                          <h2 className='text-slate-600 text-sm sm:text-base leading-7 tracking-wide'>DeepLearning.ai</h2>
-                      </div>
-                      <div className='flex w-full px-2'>
-                          <time dateTime="2024-11-09" className='gap-x-2 text-sm sm:text-base text-slate-400'>Dec 04, 2024</time>
-                          <p className='gap-x-2 text-sm text-slate-400 ml-auto'>Forever</p>
-                      </div>
-                      <p className='text-red-300 pb-4 cursor-pointer hover:underline'>View Credential</p>
-                  </div>
-                  <div 
-                  className='rounded-lg border bg-card text-card-foreground h-full flex flex-col items-center gap-y-4 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 group'>
-                      <img src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/Deep_Learning_Specialization" alt="" />
-                      <div className='text-center px-2'>
-                          <h1 className='font-medium text-base sm:text-lg leading-7 tracking-wide'>DeepLearning.AI TensorFlow Developer Specialization</h1>
-                          <h2 className='text-slate-600 text-sm sm:text-base leading-7 tracking-wide'>DeepLearning.ai</h2>
-                      </div>
-                      <div className='flex w-full px-2'>
-                          <time dateTime="2024-11-09" className='gap-x-2 text-sm sm:text-base text-slate-400'>Nov 08, 2024</time>
-                          <p className='gap-x-2 text-sm text-slate-400 ml-auto'>Forever</p>
-                      </div>
-                      <p className='text-red-300 pb-4 cursor-pointer hover:underline'>View Credential</p>
-                  </div>
-                  <div 
-                  className='rounded-lg border bg-card text-card-foreground h-full flex flex-col items-center gap-y-4 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 group'>
-                      <img src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/Machine_Learning_Specialization" alt="" />
-                      <div className='text-center px-2'>
-                          <h1 className='font-medium text-base sm:text-lg leading-7 tracking-wide'>Machine Learning Specialization</h1>
-                          <h2 className='text-slate-600 text-sm sm:text-base leading-7 tracking-wide'>DeepLearning.ai</h2>
-                      </div>
-                      <div className='flex w-full px-2'>
-                          <time dateTime="2024-11-09" className='gap-x-2 text-sm sm:text-base text-slate-400'>Oct 09, 2024</time>
-                          <p className='gap-x-2 text-sm text-slate-400 ml-auto'>Forever</p>
-                      </div>
-                      <p className='text-red-300 pb-4 cursor-pointer hover:underline'>View Credential</p>
-                  </div>
-              </div>
+              <Certifications/>
           </div>
       </main>
       <Footer />

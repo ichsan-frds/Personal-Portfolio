@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarImage } from "@/components/ui/avatar"
 // import { useEffect, useState } from "react";
 // import { CiLight } from "react-icons/ci";
 // import { MdDarkMode } from "react-icons/md";
@@ -27,9 +27,8 @@ export default function Header() {
     return (
       <header>
         <div className="flex p-4 justify justify-between">
-            <Avatar className="h-12 w-12">
+            <Avatar className="h-12 w-12 bg-slate-200">
                 <AvatarImage src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/Avatar_Ichsan_50px.png" />
-                <AvatarFallback>IF</AvatarFallback>
             </Avatar>
             <div className="hidden sm:flex gap-8 items-center tracking-wide">
                 <a href="#experience">Experience</a>
