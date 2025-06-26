@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarImage } from "../components/ui/avatar"
 // import { useEffect, useState } from "react";
 // import { CiLight } from "react-icons/ci";
 // import { MdDarkMode } from "react-icons/md";
