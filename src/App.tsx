@@ -107,12 +107,16 @@ function App() {
             <h2 className='text-color-change text-slate-300'>I love finding hidden patterns.</h2>
             <h2 className='text-color-change text-slate-300'>I love transforming curiosity into solutions.</h2>
             <h2 className='text-color-change text-slate-300'>I love making something that matters.</h2>
-            <h2 className='text-color-change justify-self-center text-slate-300 pt-8'>I love coding.</h2></div>
+            <div className='flex justify-center'>
+                <h2 className='text-color-change text-slate-300 pt-8'>I love coding.</h2></div>
+            </div>
           <div className='px-8 space-y-8 pb-16'>
             <h1 id="experience" className='text-3xl font-bold tracking-tight'>Experience</h1>
             <div className='text-lg text-slate-600 leading-7 tracking-wide'>
               <h2>"Be thankful for everything that happens in your life; it’s all an <span className='text-red-300'>experience</span>."</h2>
-              <h2 className='justify-self-end'>- Roy T. Bennett</h2>
+              <div className='flex justify-end'>
+                  <h2 className='justify-self-end'>- Roy T. Bennett</h2>
+              </div>
             </div>
             <div className="flex border-slate-600 border rounded-full overflow-hidden text-sm justify-evenly my-8">
                 <button
@@ -143,7 +147,9 @@ function App() {
               <h1 id="projects" className='text-3xl font-bold tracking-tight'>Projects</h1>
               <div className='text-lg text-slate-600 leading-7 tracking-wide'>
                 <h2>"The best way to get a <span className='text-red-300'>project</span> done faster is to start sooner."</h2>
-                <h2 className='justify-self-end'>- Jim Highsmith</h2>
+                <div className='flex justify-end'>
+                    <h2 className='justify-self-end'>- Jim Highsmith</h2>
+                </div>
               </div>
               <div className="flex border-slate-600 border rounded-full overflow-hidden text-sm justify-evenly my-8">
                   <button
@@ -174,7 +180,9 @@ function App() {
               <h1 id="certifications" className='text-3xl font-bold tracking-tight'>Certifications</h1>
               <div className='text-lg text-slate-600 leading-7 tracking-wide'>
                   <h2>"I am always ready to <span className='text-red-300'>learn</span> although I do not always like being taught."</h2>
-                  <h2 className='justify-self-end'>- Winston Churchill</h2>
+                  <div className='flex justify-end'>
+                      <h2 className='justify-self-end'>- Winston Churchill</h2>
+                  </div>
               </div>
               <Certifications/>
           </div>
