@@ -116,7 +116,7 @@ export default function DataProjects(){
                         <span className='flex gap-x-2 text-xs self-center'>Tensorflow</span>
                     </div>
                     <h1 className='font-medium text-lg leading-7 tracking-wide'>Agriclime</h1>
-                    <h2 className='text-sm text-slate-600 tracking-wide'>AgriClime is a weather-based application designed to help Indonesian farmers manage weather uncertainty through early warnings and tailored farming recommendations. By improving decision-making and offering predictive insights, it supports short-term productivity and long-term agricultural sustainabilityw.</h2>
+                    <h2 className='text-sm text-slate-600 tracking-wide'>AgriClime is a weather-based application designed to help Indonesian farmers manage weather uncertainty through early warnings and tailored farming recommendations. By improving decision-making and offering predictive insights, it supports short-term productivity and long-term agricultural sustainability.</h2>
                     <div className="flex gap-8">
                         <a href="https://github.com/nrkahfirhmd/agriclime-ml"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
                     </div>

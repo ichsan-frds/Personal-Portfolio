@@ -51,7 +51,7 @@ export default function SoftdevProjects(){
                     </div>
                     <h1 className='font-medium text-lg leading-7 tracking-wide'>LittleNest</h1>
                     <h2 className='font-medium text-sm'>Game Designer & Developer</h2>
-                    <h2 className='text-sm text-slate-600 tracking-wide'>LittleNest An interactive VR simulation that allows players to experience the challenges and responsibilities of caring for a baby firsthand. Designed with a learning by doing approach, this game immerses players in the role of a caregiver, offering a hands-on learning experience beyond just reading or watching theory.</h2>
+                    <h2 className='text-sm text-slate-600 tracking-wide'>LittleNest is an interactive VR simulation game that allows players to experience the challenges and responsibilities of caring for a baby firsthand. Designed with a learning by doing approach, this game immerses players in the role of a caregiver, offering a hands-on learning experience beyond just reading or watching theory.</h2>
                     <div className="flex gap-8">
                         <a href="https://github.com/ichsan-frds/LittleNest-VR"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
                     </div>
@@ -68,7 +68,7 @@ export default function SoftdevProjects(){
                     </div>
                     <h1 className='font-medium text-lg leading-7 tracking-wide'>Image Classification Mediapipe</h1>
                     <h2 className='font-medium text-sm'>Developer</h2>
-                    <h2 className='text-sm text-slate-600 tracking-wide'>A fun final project that aims to explore image manipulation using Mediapipe, using either static images or live feed as the input.</h2>
+                    <h2 className='text-sm text-slate-600 tracking-wide'>A fun final project of my university course in Digital Image Processing and Analysis that aims to explore image manipulation using Mediapipe, using either static images or live feed as the input.</h2>
                     <div className="flex gap-8">
                         <a href="https://github.com/ichsan-frds/Image-Classification-Mediapipe"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
                     </div>
@@ -86,7 +86,7 @@ export default function SoftdevProjects(){
                     </div>
                     <h1 className='font-medium text-lg leading-7 tracking-wide'>Kamus Translasi Aksara Sunda</h1>
                     <h2 className='font-medium text-sm'>Developer</h2>
-                    <h2 className='text-sm text-slate-600 tracking-wide'>It is a software application that serves as a dictionary for translating Old Sundanese script vocabulary into the Indonesian language.</h2>
+                    <h2 className='text-sm text-slate-600 tracking-wide'>It is a software that serves as a dictionary for translating Old Sundanese script vocabulary into the Indonesian language.</h2>
                     <div className="flex gap-8">
                         <a href="https://github.com/ichsan-frds/Kamus-Translasi-Aksara-Sunda"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
                     </div>
@@ -103,7 +103,7 @@ export default function SoftdevProjects(){
                     </div>
                     <h1 className='font-medium text-lg leading-7 tracking-wide'>Library Management System</h1>
                     <h2 className='font-medium text-sm'>Developer</h2>
-                    <h2 className='text-sm text-slate-600 tracking-wide'>The application allows users to manage book inventory, member records, and borrowing activities through an interactive desktop interface..</h2>
+                    <h2 className='text-sm text-slate-600 tracking-wide'>The application allows users to manage book inventory, member records, and borrowing activities through an interactive desktop interface.</h2>
                     <div className="flex gap-8">
                         <a href="https://github.com/ichsan-frds/Library-Management-System"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
                     </div>
