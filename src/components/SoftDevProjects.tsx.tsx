@@ -37,7 +37,7 @@ export default function SoftdevProjects(){
                     <h2 className='text-sm text-slate-600 tracking-wide'>Sobat Warung is a WhatsApp Bot–based solution that empowers urban micro-shops (warung) through data-driven insights. By collecting transactional data across locations, it enables features like demand forecasting, smart stock bundling, and collaborative purchasing with nearby warung.</h2>
                     <div className="flex gap-8">
                         <a href="http://wa.me/+14155238886?text=join%20do-tea"><FaWhatsapp className="w-8 h-8 sm:w-10 sm:h-10"/></a>
-                        <a href="https://github.com/muhammad22015/EduSiap-8"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
+                        <a href="https://github.com/nrkahfirhmd/aic-14"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
                     </div>
                 </div>
             </div>
