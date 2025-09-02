@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineOpenInBrowser } from "react-icons/md";
 
 export default function SoftdevProjects(){
@@ -18,6 +19,25 @@ export default function SoftdevProjects(){
                     <h2 className='text-sm text-slate-600 tracking-wide'>Himatif Apps is a super app made for Universitas Padjajaran Informatics Engineering Student intended to use for students and alumni internship or work database, learning materials bank, and many more.</h2>
                     <div className="flex gap-8">
                         <a href="https://apps.himatif.org"><MdOutlineOpenInBrowser className="w-8 h-8 sm:w-10 sm:h-10"/></a>
+                    </div>
+                </div>
+            </div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-3 gap-12 sm:gap-0 lg:gap-8 pt-4 pb-12'>
+                <img src="https://raw.githubusercontent.com/ichsan-frds/Image-Repo/refs/heads/main/Sobat-Warung-1.png" alt="Sobat Warung" 
+                    className='bg-slate-200 col-span-1 md:col-span-2 lg:col-span-1 rounded-md object-cover sm:aspect-square sm:w-[256px] sm:h-[256px]'/>
+                <div className='flex-col md:col-span-3 lg:col-span-2 space-y-4'>
+                    <div className='flex gap-x-6 sm:text-sm md:text-base text-slate-600'>
+                        <time dateTime="2025-06-24" className='flex gap-x-2 text-sm text-slate-400'>August 24, 2025</time>
+                        <span className='flex gap-x-2 text-xs self-center'>FastAPI</span>
+                        <span className='flex gap-x-2 text-xs self-center'>MongoDB</span>
+                        <span className='flex gap-x-2 text-xs self-center'>GCP</span>
+                    </div>
+                    <h1 className='font-medium text-lg leading-7 tracking-wide'>Sobat Warung</h1>
+                    <h2 className='font-medium text-sm'>Team Lead, Back-End Developer, and MLOps Engineer</h2>
+                    <h2 className='text-sm text-slate-600 tracking-wide'>Sobat Warung is a WhatsApp Bot–based solution that empowers urban micro-shops (warung) through data-driven insights. By collecting transactional data across locations, it enables features like demand forecasting, smart stock bundling, and collaborative purchasing with nearby warung.</h2>
+                    <div className="flex gap-8">
+                        <a href="http://wa.me/+14155238886?text=join%20do-tea"><FaWhatsapp className="w-8 h-8 sm:w-10 sm:h-10"/></a>
+                        <a href="https://github.com/muhammad22015/EduSiap-8"><FaGithub className="w-8 h-8 sm:w-10 sm:h-10"/></a>
                     </div>
                 </div>
             </div>
